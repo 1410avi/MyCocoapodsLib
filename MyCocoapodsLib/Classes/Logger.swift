@@ -14,7 +14,7 @@ public class Logger{
     }
     
     public func printLog(){
-        print("Hello World")
+        print("Hello World from SDK")
     }
     
     func privateMethod(){

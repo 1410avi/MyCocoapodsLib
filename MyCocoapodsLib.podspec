@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MyCocoapodsLib'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of MyCocoapodsLib.'
+  s.summary          = 'This is Summary of my Cocoapds Lib'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -28,7 +28,10 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/1410avi/MyCocoapodsLib.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.swift_version = '5.0'
+  s.ios.deployment_target = '16.0'
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   s.source_files = 'MyCocoapodsLib/Classes/**/*'
   
